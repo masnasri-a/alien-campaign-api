@@ -20,3 +20,13 @@ class RegisterModel(BaseModel):
     @field_validator('password')
     def validate(cls, value):
         return hash_string(value)
+
+class ValidateGoogle(BaseModel):
+    username: str
+    phone_number: str
+    password: str
+    google_id: str
+
+    @field_validator('password')
+    def validate(cls, value):
+        return hash_string(value)

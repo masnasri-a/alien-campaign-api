@@ -10,6 +10,5 @@ class CreateCampaign(BaseModel):
     social_media: str
     service_type: str
     terms_and_condition: str
-    created_at: int
     created_by: str
 
